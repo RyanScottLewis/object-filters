@@ -14,7 +14,6 @@ Gem::Specification.new do |s|
   s.post_install_message = "This is a placeholder gem... for now. Check back in a few versions!"
   s.require_paths = ["lib"]
   s.rubygems_version = "1.8.24"
-  s.summary = "Use before, after, and around filters with your objects!"
 
   if s.respond_to? :specification_version then
     s.specification_version = 3

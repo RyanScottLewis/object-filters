@@ -7,11 +7,15 @@ spec = Gem::Specification.new do |s|
   s.authors      = ['Ryan Scott Lewis']
   s.email        = ['c00lryguy@gmail.com']
   s.homepage     = "http://rubygems.org/gems/#{s.name}"
-  s.summary      = 'An MVC framework for for Terminal applications (CLI)'
-  s.description  = 'This gem provides a simple and easy MVC framework for use with our command line (terminal) applications.'
+  s.summary      = 'Use before, after, and around filters with your objects!'
+  s.description  = 'This gem provides ActionController::Filters for normal applications.'
   s.require_path = 'lib'
+  s.post_install_message = "This is a placeholder gem... for now. Check back in a few versions!"
   s.files        = `git ls-files`.lines.to_a.collect { |s| s.strip }
   s.executables  = `git ls-files -- bin/*`.lines.to_a.collect { |s| File.basename(s.strip) }
+  
+  s.add_dependency 'version', '~> 1'
+  s.add_dependency 'active_support', '~> 3'
 end
 
 Rake::VersionTask.new do |t|
@@ -19,9 +23,6 @@ Rake::VersionTask.new do |t|
   t.with_gemspec = spec
 end
 
-RSpec::Core::RakeTask.new do |t|
-  t.rcov = true
-  t.rcov_opts = %w{--rails --exclude osx\/objc,gems\/,spec\/,features\/}
-end
+RSpec::Core::RakeTask.new
 
 task :default => :spec

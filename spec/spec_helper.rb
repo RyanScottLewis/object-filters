@@ -1,1 +1,1 @@
-# require 'filters'
+require 'filters'
