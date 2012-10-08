@@ -1,14 +1,14 @@
 # -*- encoding: utf-8 -*-
 
 Gem::Specification.new do |s|
-  s.name = "filters"
+  s.name = "object-filters"
   s.version = "0.0.5"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Ryan Scott Lewis"]
   s.date = "2012-10-08"
   s.description = "This gem provides ActionController::Filters for normal applications."
-  s.email = ["c00lryguy@gmail.com"]
+  s.email = ["ryan@rynet.us"]
   s.files = [".gitignore", "Gemfile", "Rakefile", "VERSION", "filters.gemspec", "lib/filters.rb", "spec/filters_spec.rb", "spec/spec_helper.rb"]
   s.homepage = "http://rubygems.org/gems/filters"
   s.post_install_message = "This is a placeholder gem... for now. Check back in a few versions!"
