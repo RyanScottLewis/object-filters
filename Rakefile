@@ -2,7 +2,7 @@ require 'rake/version_task'
 require 'rspec/core/rake_task'
 
 spec = Gem::Specification.new do |s|
-  s.name         = File.basename(__FILE__, '.gemspec')
+  s.name         = 'filters'
   s.platform     = Gem::Platform::RUBY
   s.authors      = ['Ryan Scott Lewis']
   s.email        = ['c00lryguy@gmail.com']
